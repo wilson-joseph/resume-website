@@ -1,4 +1,8 @@
-@media (max-width: 1300px) {}
+@media (max-width: 1300px) {
+    .desktop_only {
+        display: none;
+    }
+}
 
 @media (max-width: 1120px) {}
 
@@ -9,6 +13,14 @@
 
     .header_section .main_nav {
         flex: 1;
+    }
+
+    .header_section .header_top .contact_nav a:first-child {
+        text-align: left;
+    }
+
+    .header_section .header_top .contact_nav a:last-child {
+        text-align: right;
     }
 
     #navbarSupportedContent {
@@ -27,16 +39,23 @@
         width: 75px;
     }
 
-
     .feature_section {
         transform: none;
         padding: 90px 0;
     }
 
-
+    
 }
 
 @media (max-width: 767px) {
+    .desktop_tablet {
+        display: none;
+    }
+
+    .header_section .header_bottom {
+        padding: 85px 0px 10px 0px;
+      }
+
     .layout_padding {
         padding-top: 90px;
         padding-bottom: 90px;
